@@ -5,6 +5,7 @@ namespace Mimachh\Guardians;
 use App\Models\User;
 use Illuminate\Support\ServiceProvider;
 use Mimachh\Guardians\Console\SeedRolesCommand;
+use Mimachh\Guardians\Http\Middleware\CheckRoleMiddleware;
 use Mimachh\Guardians\Observers\UserObserver;
 
 class GuardiansServiceProvider extends ServiceProvider
@@ -35,6 +36,9 @@ class GuardiansServiceProvider extends ServiceProvider
                 SeedRolesCommand::class,
             ]);
         }
+
+        $router = $this->app['router'];
+        $router->aliasMiddleware('checkRole', CheckRoleMiddleware::class);
         
     }
 

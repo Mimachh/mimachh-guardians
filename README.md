@@ -163,7 +163,29 @@ class GuardiansServiceProvider extends ServiceProvider
     }
 }
 ```
+### Middleware
+The package gives you a middleware to check the users's roles.
 
+#### Register the middleware 
+Give the middleware an alias :
+
+```php
+    ->withMiddleware(function (Middleware $middleware) {
+        $middleware->alias([
+            'checkRole' => CheckRoleMiddleware::class
+        ]);
+    })
+```
+
+#### Use the middleware
+Use it as you use any middleware, but ensure you pass the slug of the authorized role.
+
+```php
+Route::get('/', function () {
+    return view('welcome');
+})->middleware(['auth', 'checkRole:admin']);
+
+```
 ### Testing
 To test the package, you can create a new user and verify if the roles are attached correctly:
 
@@ -178,6 +200,10 @@ $user = App\Models\User::create([
 
 $user->roles; // Check if roles are attached
 ```
+
+### Roadmap
+Incoming : 
+- Middleware to check is user have multiple roles eg. User must be ***author*** AND ***admin***
 
 ### Contributing
 If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on GitHub.
