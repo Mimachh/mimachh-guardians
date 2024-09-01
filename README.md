@@ -55,6 +55,13 @@ The configuration file `config/guardians.php` includes:
 - cache: Cache settings for roles and permissions to improve performance.
 
 ## Usage
+
+## Seed the roles
+You can seed the default roles using : 
+```php
+   php artisan guardians:seed
+```
+
 ### Defining the Relationships
 Ensure that your User and Role models define the many-to-many relationship:
 
