@@ -1,0 +1,29 @@
+{
+    "name": "mimachh/guardians",
+    "description": "Handle multi user roles easily",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "0.0.1",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Mimachh\\Guardians\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mimachh\\Guardians\\GuardiansServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Mimachh",
+            "email": "mimach.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    }
+}
