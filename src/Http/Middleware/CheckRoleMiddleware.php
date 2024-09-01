@@ -18,8 +18,8 @@ class CheckRoleMiddleware
      */
     public function handle($request, Closure $next, $role)
     {
-        // $user = Auth::user();
-        $user = User::where('email', 'mimach@gmail.com')->first();
+        $user = Auth::user();
+        
         if ($user && $user->roles->contains('slug', $role)) {
             return $next($request);
         }
