@@ -1,8 +1,7 @@
 {
     "name": "mimachh/guardians",
     "description": "Handle multi user roles in your Laravel app easily",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+
     "version": "0.0.1",
     "type": "library",
     "autoload": {
