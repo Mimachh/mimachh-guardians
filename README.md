@@ -56,6 +56,19 @@ The configuration file `config/guardians.php` includes:
 
 ## Usage
 
+## Use the trait
+First you will need to add the trait `HasRoles` to the user model.
+
+```php
+use Mimachh\Guardians\HasRoles;
+
+class User extends Authenticatable
+{
+    use HasRoles;
+    // other configuration
+}
+```
+
 ## Seed the roles
 You can seed the default roles using : 
 ```php
@@ -66,6 +79,8 @@ You can seed the default roles using :
 Ensure that your User and Role models define the many-to-many relationship:
 
 #### User Model:
+By default the relation `$user->roles()` is already loaded.
+But you can override it, if you need to.
 
 ```php
 namespace App\Models;
@@ -84,6 +99,7 @@ class User extends Authenticatable
 ```
 
 #### Role Model:
+Relation is many to many, and the Role Model is already attach to user model.
 
 ```php
 namespace Mimachh\Guardians\Models;
