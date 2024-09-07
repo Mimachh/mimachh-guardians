@@ -16,6 +16,11 @@ trait HasRoles
         return $this->roles()->attach($role);
     }
 
+    public function assignRoles($roles)
+    {
+        return $this->roles()->sync($roles);
+    }
+
     public function removeRole($role)
     {
         return $this->roles()->detach($role);

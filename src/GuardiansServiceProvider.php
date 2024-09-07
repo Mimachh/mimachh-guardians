@@ -2,6 +2,7 @@
 
 namespace Mimachh\Guardians;
 
+use Mimachh\Guardians\Console\ManageGuardians;
 use App\Models\User;
 use Illuminate\Support\ServiceProvider;
 use Mimachh\Guardians\Console\SeedRolesCommand;
@@ -34,6 +35,7 @@ class GuardiansServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 SeedRolesCommand::class,
+                ManageGuardians::class,
             ]);
         }
 

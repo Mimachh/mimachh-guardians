@@ -121,20 +121,30 @@ class Role extends Model
 ```php
 $user = App\Models\User::find(1);
 $role = Mimachh\Guardians\Models\Role::where('slug', 'admin')->first();
-$user->roles()->attach($role);
+$user->assignRole($role);
 
 ```
+
+#### Attach several roles to a user:
+
+```php
+$user = App\Models\User::find(1);
+$roles = ["user", "admin"];
+$user->assignRoles($roles);
+
+```
+
 #### Detach a role from a user:
 
 ```php
-$user->roles()->detach($role);
+$user->removeRole($role);
 ```
 
-#### Check user roles:
+#### Check user role:
 
 ```php
-if ($user->roles->contains('slug', 'admin')) {
-    // User has the 'admin' role
+if ($user->hasRole('slug')) {
+    // User has the 'slug' role
 }
 ```
 

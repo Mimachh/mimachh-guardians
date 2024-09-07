@@ -3,6 +3,7 @@
     "description": "Handle multi user roles in your Laravel app easily",
     "minimum-stability": "stable",
     "prefer-stable": true,
+    "version": "0.0.2",
     "type": "library",
     "autoload": {
         "psr-4": {
@@ -23,6 +24,7 @@
         }
     ],
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "laravel/framework": "^11.9"
     }
 }
