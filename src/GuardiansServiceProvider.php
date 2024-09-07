@@ -19,17 +19,17 @@ class GuardiansServiceProvider extends ServiceProvider
     {
         // $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
         // Charger les migrations
-        $this->loadMigrationsFrom(__DIR__ . '/./database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
 
         User::observe(UserObserver::class);
         
         // Charger les seeders
         $this->publishes([
-            __DIR__ . '/./database/seeders' => database_path('seeders'),
+            __DIR__ . '/../database/seeders' => database_path('seeders'),
         ], 'guardians-seeders');
 
         $this->publishes([
-            __DIR__ . '/./config/guardians.php' => config_path('guardians.php'),
+            __DIR__ . '/../config/guardians.php' => config_path('guardians.php'),
         ], 'guardians-config');
 
         if ($this->app->runningInConsole()) {
