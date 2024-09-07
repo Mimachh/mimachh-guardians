@@ -1,30 +1,31 @@
 {
-    "name": "mimachh/guardians",
-    "description": "Handle multi user roles in your Laravel app easily",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "version": "0.0.5",
-    "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Mimachh\\Guardians\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Mimachh\\Guardians\\GuardiansServiceProvider"
-            ]
-        }
-    },
-    "authors": [
-        {
-            "name": "Mimachh",
-            "email": "mimach.dev@gmail.com"
-        }
-    ],
-    "require": {
-        "php": "^8.2",
-        "laravel/framework": "^11.9"
+  "name": "mimachh/guardians",
+  "description": "Handle multi user roles in your Laravel app easily",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "version": "0.0.6",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Mimachh\\Guardians\\": "src/",
+      "Database\\Factories\\": "database/factories/"
     }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mimachh\\Guardians\\GuardiansServiceProvider"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "Mimachh",
+      "email": "mimach.dev@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^11.9"
+  }
 }
