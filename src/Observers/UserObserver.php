@@ -4,7 +4,7 @@ namespace Mimachh\Guardians\Observers;
 
 // use Illuminate\Support\Facades\Config;
 use App\Models\User;
-use Mimachh\Guardians\Role;
+use Mimachh\Guardians\Models\Role;
 
 class UserObserver
 {

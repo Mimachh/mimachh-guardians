@@ -4,8 +4,7 @@
 namespace Mimachh\Guardians\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Mimachh\Guardians\Role;
-
+use Mimachh\Guardians\Models\Role;
 
 class RoleFactory extends Factory
 {

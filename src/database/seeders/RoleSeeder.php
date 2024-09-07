@@ -3,7 +3,7 @@
 namespace Mimachh\Guardians\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Mimachh\Guardians\Role;
+use Mimachh\Guardians\Models\Role;
 
 class RoleSeeder extends Seeder
 {

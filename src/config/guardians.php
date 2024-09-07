@@ -11,7 +11,7 @@ return [
     | You can change the model here to use a custom Role model if necessary.
     |
     */
-    'role_model' => \Mimachh\Guardians\Role::class,
+    'role_model' => \Mimachh\Guardians\Models\Role::class,
 
     /*
     |--------------------------------------------------------------------------

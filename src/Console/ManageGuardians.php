@@ -4,7 +4,7 @@ namespace Mimachh\Guardians\Console;
 
 use App\Models\User;
 use Illuminate\Console\Command;
-use Mimachh\Guardians\Role;
+use Mimachh\Guardians\Models\Role;
 
 class ManageGuardians extends Command
 {

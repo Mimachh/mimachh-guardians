@@ -2,7 +2,7 @@
 
 namespace Mimachh\Guardians;
 
-use Mimachh\Guardians\Role;
+use Mimachh\Guardians\Models\Role;
 
 trait HasRoles
 {
