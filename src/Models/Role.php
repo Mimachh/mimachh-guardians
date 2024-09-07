@@ -1,6 +1,6 @@
 <?php
 
-namespace Mimachh\Guardians;
+namespace Mimachh\Guardians\Models;
 
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
