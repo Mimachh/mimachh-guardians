@@ -3,12 +3,11 @@
   "description": "Handle multi user roles in your Laravel app easily",
   "minimum-stability": "stable",
   "prefer-stable": true,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "library",
   "autoload": {
     "psr-4": {
-      "Mimachh\\Guardians\\": "src/",
-      "Database\\Factories\\": "database/factories/"
+      "Mimachh\\Guardians\\": "src/"
     }
   },
   "extra": {
