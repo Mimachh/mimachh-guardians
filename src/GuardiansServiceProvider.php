@@ -19,7 +19,7 @@ class GuardiansServiceProvider extends ServiceProvider
     {
         // $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
         // Charger les migrations
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/./database/migrations');
 
         User::observe(UserObserver::class);
         
