@@ -12,7 +12,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Database\\Factories\\": "database/factories/"
+      "Mimachh\\Guardians\\Database\\Factories\\": "/database/factories/"
     }
   },
   "extra": {

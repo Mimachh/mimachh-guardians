@@ -5,15 +5,19 @@ namespace Mimachh\Guardians\Models;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Mimachh\Guardians\Database\Factories\RoleFactory;
 
 class Role extends Model
 {
     use HasFactory;
     protected $fillable = ['name', 'slug'];
 
-    protected static function roleFactory()
+
+       
+        /** @return RoleFactory */
+    protected static function newFactory()
     {
-        return \Mimachh\Guardians\Database\Factories\RoleFactory::new();
+        return RoleFactory::new();
     }
 
     public function users()

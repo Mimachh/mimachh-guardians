@@ -25,7 +25,7 @@ class GuardiansServiceProvider extends ServiceProvider
         
         // Charger les seeders
         $this->publishes([
-            __DIR__ . '/../database/seeders' => database_path('seeders'),
+            __DIR__ . '/./database/seeders' => database_path('seeders'),
         ], 'guardians-seeders');
 
         $this->publishes([
